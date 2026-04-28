@@ -1,3 +1,6 @@
+const { startWebSocket } = require('./services/websocket');
+const prices = startWebSocket();
+
 require('dotenv').config();
 const express = require('express');
 
